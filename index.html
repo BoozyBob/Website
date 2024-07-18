@@ -1,0 +1,3311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boozy Bob</title>
+
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="containerCustom">
+      <div class="main">
+        <div
+          id="el"
+          class="overlay"
+          style="height: 400px; width: 100%; left: 0px;"
+        ></div>
+
+        <!-- <div class="container"> -->
+        <div class="roww header">
+          <div class="startoverB">
+            <!-- <img src="./assets/W1/startover.png" width="45" alt="" srcset="" /> -->
+            <img src="./assets/W1/startover.png" alt="" srcset="" />
+          </div>
+          <div class="aboutB"></div>
+          <div class="loginB">
+            <img src="./assets/W1/login.png" width="26" alt="" srcset="" />
+          </div>
+        </div>
+        <!-- </div> -->
+        <div class="roww content">
+          <div class="answersOverall">
+            <div class="answerContainer">
+              <!-- THE BACK BUTTON (borrowing space) -->
+              <div class="backContainer">
+                <div class="backBox">
+                  <div id="backBtn">
+                    <img src="./assets/W1/back.png" width="100%" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- ACTUAL OWNERS OF THE CONTAINER -->
+              <div class="no-box buttonBox_twoColss buttonBox_yesNo" id="noBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>No, I haven't</p>
+                </span>
+              </div>
+              <div
+                class="yes-box buttonBox_twoColss buttonBox_yesNo"
+                id="yesBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Yes, let’s shop</p>
+                </span>
+              </div>
+
+              <div class="wine-box buttonBox_twoCols" id="wineBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Wine</p>
+                </span>
+              </div>
+
+              <div class="beer-box buttonBox_twoCols" id="beerBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Beer</p>
+                </span>
+              </div>
+
+              <div class="spirits-box buttonBox_twoCols" id="spiritsBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Spirits</p>
+                </span>
+              </div>
+
+              <div class="other-box buttonBox_twoCols" id="otherBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Other</p>
+                </span>
+              </div>
+
+              <div class="red-box buttonBox_twoCols" id="redBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Red</p>
+                </span>
+              </div>
+
+              <div class="white-box buttonBox_twoCols" id="whiteBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>White</p>
+                </span>
+              </div>
+
+              <div class="sparkling-box buttonBox_twoCols" id="sparklingBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Sparkling</p>
+                </span>
+              </div>
+
+              <div class="otherColor-box buttonBox_twoCols" id="otherColorBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Other</p>
+                </span>
+              </div>
+
+              <div class="relaxing-box buttonBox_twoCols" id="relaxingBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Relaxing</p>
+                </span>
+              </div>
+
+              <div
+                class="socializing-box buttonBox_twoCols"
+                id="socializingBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Socializing</p>
+                </span>
+              </div>
+
+              <div class="gifting-box buttonBox_twoCols" id="giftingBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Gifting</p>
+                </span>
+              </div>
+
+              <div
+                class="mealPairing-box buttonBox_twoCols"
+                id="mealPairingBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Meal Pairing</p>
+                </span>
+              </div>
+
+              <div class="choose-box buttonBox_twoCols" id="chooseBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>I'll Choose</p>
+                </span>
+              </div>
+
+              <div class="surpriseMe-box buttonBox_twoCols" id="surpriseMeBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Surprise Me</p>
+                </span>
+              </div>
+
+              <div
+                class="cabernetSauvignon-box threeColWidth buttonBox_twoCols"
+                id="cabernetSauvignonBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Cabernet<br />Sauvignon</p>
+                </span>
+              </div>
+
+              <div
+                class="zinfandel-box threeColWidth buttonBox_twoCols"
+                id="zinfandelBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Zinfandel</p>
+                </span>
+              </div>
+
+              <div
+                class="merlot-box threeColWidth buttonBox_twoCols"
+                id="merlotBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Merlot</p>
+                </span>
+              </div>
+
+              <div
+                class="redBlend-box threeColWidth buttonBox_twoCols"
+                id="redBlendBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Red Blend</p>
+                </span>
+              </div>
+
+              <div
+                class="pinotNoir-box threeColWidth buttonBox_twoCols"
+                id="pinotNoirBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Pinot Noir</p>
+                </span>
+              </div>
+
+              <div
+                class="more-box threeColWidth buttonBox_twoCols"
+                id="moreBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>More</p>
+                </span>
+              </div>
+
+              <div
+                class="spend01-box threeColWidth buttonBox_twoCols"
+                id="spend01Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Under $10</p>
+                </span>
+              </div>
+
+              <div
+                class="spend02-box threeColWidth buttonBox_twoCols"
+                id="spend02Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>$10 - $15</p>
+                </span>
+              </div>
+
+              <div
+                class="spend03-box threeColWidth buttonBox_twoCols"
+                id="spend03Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>$15 - $20</p>
+                </span>
+              </div>
+
+              <div
+                class="spend04-box threeColWidth buttonBox_twoCols"
+                id="spend04Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>$20 - $30</p>
+                </span>
+              </div>
+
+              <div
+                class="spend05-box threeColWidth buttonBox_twoCols"
+                id="spend05Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>$30 - $40</p>
+                </span>
+              </div>
+
+              <div
+                class="spend06-box threeColWidth buttonBox_twoCols"
+                id="spend06Btn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>More</p>
+                </span>
+              </div>
+
+              <div class="noTnk-box buttonBox_threeColss" id="noTnkBtn">
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>No, thank you</p>
+                </span>
+              </div>
+
+              <div
+                class="keepShopping-box buttonBox_twoCols"
+                id="keepShoppingBtn"
+              >
+                <span
+                  class="buttonText_16"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>Keep Shopping</p>
+                </span>
+              </div>
+
+              <div class="nextRecomd-box buttonBox_threeColss" id="nextRecomd">
+                <span
+                  class="text_14"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>NEXT<br />RECOMMENDATION</p>
+                </span>
+              </div>
+
+              <div class="textMe-box buttonBox_threeColss" id="textMe">
+                <span
+                  class="text_14"
+                  style="color: white; font-family: Teko-Regular"
+                >
+                  <p>TEXT ME YOUR<br />RECOMMENDATIONS</p>
+                </span>
+              </div>
+
+              <div class="phoneContainer">
+                <div id="sCellPhoneNum">
+                  <span
+                    class="text_14"
+                    style="color: white; font-family: Teko-Regular"
+                  >
+                    ENTER YOUR CELL NUMBER
+                  </span>
+                </div>
+                <div id="sCellPhoneNumKeys">
+                  <div class="phoneNum0-box phoneNum" id="phoneNum0Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>0</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum1-box phoneNum" id="phoneNum1Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>1</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum2-box phoneNum" id="phoneNum2Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>2</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum3-box phoneNum" id="phoneNum3Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>3</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum4-box phoneNum" id="phoneNum4Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>4</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum5-box phoneNum" id="phoneNum5Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>5</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum6-box phoneNum" id="phoneNum6Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>6</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum7-box phoneNum" id="phoneNum7Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>7</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum8-box phoneNum" id="phoneNum8Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>8</p>
+                    </span>
+                  </div>
+                  <div class="phoneNum9-box phoneNum" id="phoneNum9Btn">
+                    <span
+                      class="text_10"
+                      style="color: white; font-family: Teko-Regular"
+                    >
+                      <p>9</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="submitBtn-box" id="submitBtn">
+                  <span
+                    class="text_10"
+                    style="color: white; font-family: Teko-Regular"
+                  >
+                    <p>SUBMIT</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="startContainer">
+            <div class="start-box" id="startBtn">
+              <span
+                class="text_20"
+                style="color: white; font-family: Teko-Regular"
+              >
+                <p>Start</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="questionContainer">
+            <div class="question-box">
+              <span
+                class="text_16"
+                style="color: white; font-family: Teko-Regular"
+              >
+                <p class="">
+                  Can I help You Shop for<br />Any Beer, Wine or Spirits<br />Today?
+                </p>
+              </span>
+              <!--<img src="./assets/W1/bigtext.png" width="60%" alt="">-->
+            </div>
+          </div>
+
+          <!-- <div class="backContainer">
+            <div class="backBox">
+              <div id="backBtn">
+                <img src="./assets/W1/back.png" width="100%" alt="" />
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="helperContainer">
+          <div class="videosContainer">
+            <div class="videoSolo1">
+              <div class="videoSolo1_inner">
+                <video id="embed" preload="yes" playsinline>
+                  <source src="./assets/2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <div class="videoSolo1">
+              <div class="videoSolo1_inner">
+                <video
+                  id="embed_1"
+                  style="display: hidden"
+                  preload="yes"
+                  playsinline
+                >
+                  <source src="./assets/1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <div id="el_1" class="overlay_1"></div>
+
+            <!-- <video
+              id="embed_1"
+              style="display: hidden"
+              preload="yes"
+              playsinline
+            >
+              <source src="./assets/1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> -->
+
+            <div class="videoSolo1">
+              <div class="videoSolo1_inner">
+                <video
+                  id="embed_2"
+                  style="display: hidden"
+                  preload="yes"
+                  playsinline
+                >
+                  <source src="./assets/3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- <div id="el" class="overlay_new"></div> -->
+          </div>
+        </div>
+
+        <div id="bodyBg">
+          <div class="theTopPart"></div>
+          <div class="bodyBg_innerContainer">
+            <img id="adBg" src="./assets/W3/bg01.png" width="70%" alt="" />
+
+            <span id="adPic" class="pickLabel">
+              <p>TOP PICK</p>
+            </span>
+
+            <img id="adLost" src="./assets/W3/lost.png" width="31%" alt="" />
+
+            <img id="adValue" src="./assets/W3/value.png" width="6%" alt="" />
+
+            <img id="ad94" src="./assets/W3/94.png" width="12%" alt="" />
+
+            <img id="ad14Alc" src="./assets/W3/14alc.png" width="17%" alt="" />
+
+            <img
+              id="adSw"
+              src="./assets/W3/sweetnesbody.png"
+              width="17%"
+              alt=""
+            />
+
+            <img
+              id="adDesc"
+              src="./assets/W3/description.png"
+              width="55%"
+              alt=""
+            />
+
+            <img id="adNext" src="./assets/W3/next.png" width="4.5%" alt="" />
+
+            <span id="prevTxt" class="pickLabel">
+              <p>3rd<br />PICK</p>
+            </span>
+
+            <img id="adPrev" src="./assets/W3/prev.png" width="4.5%" alt="" />
+
+            <span id="nextTxt" class="pickLabel">
+              <p>2nd<br />PICK</p>
+            </span>
+
+            <!-- the black overlay -->
+            <div id="el_1" class="overlay_2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var vid = document.getElementById("embed");
+    var vid1 = document.getElementById("embed_1");
+    var vid2 = document.getElementById("embed_2");
+
+    var width = vid.width;
+    var height = vid.height;
+    var x = vid.offsetLeft;
+    var y = vid.offsetTop;
+    var sCellPhoneNum = "";
+    var stateNum = 0;
+    var noWorkStart = true;
+    var bCanPlay = false;
+    let oBtn = [
+      {
+        index: 0,
+        name: "yesBtn",
+        text: "yesBtn",
+        step: 1,
+        isShow: true,
+      },
+      {
+        index: 1,
+        name: "noBtn",
+        text: "noBtn",
+        step: 2,
+        isShow: false,
+      },
+      {
+        index: 2,
+        name: "backBtn",
+        text: "backBtn",
+        step: 2,
+        isShow: false,
+      },
+      {
+        index: 3,
+        name: "wineBtn",
+        text: "wineBtn",
+        step: 4,
+        isShow: false,
+      },
+      {
+        index: 4,
+        name: "beerBtn",
+        text: "beerBtn",
+        step: 4,
+        isShow: false,
+      },
+      {
+        index: 5,
+        name: "spiritsBtn",
+        text: "spiritsBtn",
+        step: 4,
+        isShow: false,
+      },
+      {
+        index: 6,
+        name: "otherBtn",
+        text: "otherBtn",
+        step: 4,
+        isShow: false,
+      },
+      {
+        index: 7,
+        name: "redBtn",
+        text: "redBtn",
+        step: 5,
+        isShow: false,
+      },
+      {
+        index: 8,
+        name: "whiteBtn",
+        text: "whiteBtn",
+        step: 5,
+        isShow: false,
+      },
+      {
+        index: 9,
+        name: "sparklingBtn",
+        text: "sparklingBtn",
+        step: 5,
+        isShow: false,
+      },
+      {
+        index: 10,
+        name: "otherColorBtn",
+        text: "otherColorBtn",
+        step: 5,
+        isShow: false,
+      },
+
+      {
+        index: 11,
+        name: "relaxingBtn",
+        text: "relaxingBtn",
+        step: 6,
+        isShow: false,
+      },
+      {
+        index: 12,
+        name: "socializingBtn",
+        text: "socializingBtn",
+        step: 6,
+        isShow: false,
+      },
+      {
+        index: 13,
+        name: "giftingBtn",
+        text: "giftingBtn",
+        step: 6,
+        isShow: false,
+      },
+      {
+        index: 14,
+        name: "mealPairingBtn",
+        text: "mealPairingBtn",
+        step: 6,
+        isShow: false,
+      },
+      {
+        index: 15,
+        name: "choose",
+        text: "I'll Choose",
+        step: 7,
+        isShow: false,
+      },
+      {
+        index: 16,
+        name: "surpriseMe",
+        text: "Surprise Me",
+        step: 7,
+        isShow: false,
+      },
+
+      {
+        index: 17,
+        name: "cabernetSauvignon",
+        text: "Cabernet Sauvignon",
+        step: 8,
+        isShow: false,
+      },
+      {
+        index: 18,
+        name: "zinfandel",
+        text: "Zinfandel",
+        step: 8,
+        isShow: false,
+      },
+      {
+        index: 19,
+        name: "merlot",
+        text: "Merlot",
+        step: 8,
+        isShow: false,
+      },
+      {
+        index: 20,
+        name: "redBlend",
+        text: "Red Blend",
+        step: 8,
+        isShow: false,
+      },
+      {
+        index: 21,
+        name: "pinotNoir",
+        text: "Pinot Noir",
+        step: 8,
+        isShow: false,
+      },
+      {
+        index: 22,
+        name: "more",
+        text: "More",
+        step: 8,
+        isShow: false,
+      },
+
+      {
+        index: 23,
+        name: "spend01",
+        text: "Under $10",
+        step: 9,
+        isShow: false,
+      },
+      {
+        index: 24,
+        name: "spend02",
+        text: "$10 - $15",
+        step: 9,
+        isShow: false,
+      },
+      {
+        index: 25,
+        name: "spend03",
+        text: "$15 - $20",
+        step: 9,
+        isShow: false,
+      },
+      {
+        index: 26,
+        name: "spend04",
+        text: "$20 - $30",
+        step: 9,
+        isShow: false,
+      },
+      {
+        index: 27,
+        name: "spend05",
+        text: "$30 - $40",
+        step: 9,
+        isShow: false,
+      },
+      {
+        index: 28,
+        name: "spend06",
+        text: "More",
+        step: 9,
+        isShow: false,
+      },
+
+      {
+        index: 29,
+        name: "phoneContainer",
+        text: "",
+        step: 10,
+        isShow: false,
+      },
+
+      {
+        index: 30,
+        name: "phoneNum0",
+        text: "0",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 31,
+        name: "phoneNum1",
+        text: "1",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 32,
+        name: "phoneNum2",
+        text: "2",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 33,
+        name: "phoneNum3",
+        text: "3",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 34,
+        name: "phoneNum4",
+        text: "4",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 35,
+        name: "phoneNum5",
+        text: "5",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 36,
+        name: "phoneNum6",
+        text: "6",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 37,
+        name: "phoneNum7",
+        text: "7",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 38,
+        name: "phoneNum8",
+        text: "8",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 39,
+        name: "phoneNum9",
+        text: "9",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 40,
+        name: "submitBtn",
+        text: "SUBMIT",
+        step: 10,
+        isShow: false,
+      },
+      {
+        index: 41,
+        name: "noTnkBtn",
+        text: "No, thank you",
+        step: 16,
+        isShow: false,
+      },
+      {
+        index: 42,
+        name: "keepShoppingBtn",
+        text: "Keep Shopping",
+        step: 16,
+        isShow: false,
+      },
+      {
+        index: 43,
+        name: "nextRecomd",
+        text: "NEXT RECOMMENDATION",
+        step: 12,
+        isShow: false,
+      },
+      {
+        index: 44,
+        name: "textMe",
+        text: "TEXT ME YOUR RECOMMANDATION",
+        step: 12,
+        isShow: false,
+      },
+    ];
+    let step = 0;
+    var isShowStartBtn = true;
+    var isYesStartBtn = true;
+    var isPlaying = true;
+    // var wAutoPlay = true;
+
+    // vid.addEventListener("click", onclick1);
+
+    // document.body.innerHTML += div;
+    document.getElementsByClassName("questionContainer")[0].style.display =
+      "none";
+    document.getElementsByClassName("answerContainer")[0].style.display =
+      "none";
+
+    document.getElementsByClassName("wine-box")[0].style.display = "none";
+    document.getElementsByClassName("beer-box")[0].style.display = "none";
+    document.getElementsByClassName("spirits-box")[0].style.display = "none";
+    document.getElementsByClassName("other-box")[0].style.display = "none";
+
+    document.getElementsByClassName("red-box")[0].style.display = "none";
+    document.getElementsByClassName("white-box")[0].style.display = "none";
+    document.getElementsByClassName("sparkling-box")[0].style.display = "none";
+    document.getElementsByClassName("otherColor-box")[0].style.display = "none";
+
+    document.getElementsByClassName("relaxing-box")[0].style.display = "none";
+    document.getElementsByClassName("socializing-box")[0].style.display =
+      "none";
+    document.getElementsByClassName("gifting-box")[0].style.display = "none";
+    document.getElementsByClassName("mealPairing-box")[0].style.display =
+      "none";
+
+    document.getElementsByClassName("choose-box")[0].style.display = "none";
+    document.getElementsByClassName("surpriseMe-box")[0].style.display = "none";
+
+    document.getElementsByClassName("noTnk-box")[0].style.display = "none";
+    document.getElementsByClassName("keepShopping-box")[0].style.display =
+      "none";
+
+    document.getElementsByClassName("nextRecomd-box")[0].style.display = "none";
+    document.getElementsByClassName("textMe-box")[0].style.display = "none";
+
+    document.getElementsByClassName("cabernetSauvignon-box")[0].style.display =
+      "none";
+    document.getElementsByClassName("zinfandel-box")[0].style.display = "none";
+    document.getElementsByClassName("merlot-box")[0].style.display = "none";
+    document.getElementsByClassName("redBlend-box")[0].style.display = "none";
+    document.getElementsByClassName("pinotNoir-box")[0].style.display = "none";
+    document.getElementsByClassName("more-box")[0].style.display = "none";
+
+    document.getElementsByClassName("spend01-box")[0].style.display = "none";
+
+    document.getElementsByClassName("yes-box")[0].style.display = "none";
+
+    document.getElementsByClassName("spend02-box")[0].style.display = "none";
+    document.getElementsByClassName("spend03-box")[0].style.display = "none";
+    document.getElementsByClassName("spend04-box")[0].style.display = "none";
+    document.getElementsByClassName("spend05-box")[0].style.display = "none";
+    document.getElementsByClassName("spend06-box")[0].style.display = "none";
+    document.getElementsByClassName("phoneContainer")[0].style.display = "none";
+    document.getElementById("embed_1").style.display = "none";
+    document.getElementById("embed_2").style.display = "none";
+    document.getElementById("el_1").style.display = "none";
+
+    document.getElementsByClassName("backContainer")[0].style.display = "none";
+    document.getElementById("startBtn").addEventListener("click", fnStartBtn);
+    document.getElementById("yesBtn").addEventListener("click", fnYesBtn);
+    document.getElementById("backBtn").addEventListener("click", fnBackBtn);
+    document.getElementById("noBtn").addEventListener("click", fnNoBtn);
+
+    document.getElementById("wineBtn").addEventListener("click", fnWineBtn);
+    document.getElementById("beerBtn").addEventListener("click", fnBeerBtn);
+    document
+      .getElementById("spiritsBtn")
+      .addEventListener("click", fnSpiritsBtn);
+    document.getElementById("otherBtn").addEventListener("click", fnOtherBtn);
+
+    document.getElementById("redBtn").addEventListener("click", fnRedBtn);
+    document.getElementById("whiteBtn").addEventListener("click", fnWhiteBtn);
+    document
+      .getElementById("sparklingBtn")
+      .addEventListener("click", fnSparklingBtn);
+    document
+      .getElementById("otherColorBtn")
+      .addEventListener("click", fnOtherColorBtn);
+
+    document
+      .getElementById("relaxingBtn")
+      .addEventListener("click", fnRelaxingBtn);
+    document
+      .getElementById("socializingBtn")
+      .addEventListener("click", fnSocializingBtn);
+    document
+      .getElementById("giftingBtn")
+      .addEventListener("click", fnGiftingBtn);
+    document
+      .getElementById("mealPairingBtn")
+      .addEventListener("click", fnMealPairingBtn);
+
+    document.getElementById("chooseBtn").addEventListener("click", fnChooseBtn);
+    document
+      .getElementById("surpriseMeBtn")
+      .addEventListener("click", fnSurpriseMeBtn);
+
+    document.getElementById("noTnkBtn").addEventListener("click", fnNoTnkBtn);
+    document
+      .getElementById("keepShoppingBtn")
+      .addEventListener("click", fnKeepShoppingBtn);
+
+    document
+      .getElementById("nextRecomd")
+      .addEventListener("click", fnRecomdBtn);
+    document.getElementById("textMe").addEventListener("click", fnTextMeBtn);
+
+    document
+      .getElementById("cabernetSauvignonBtn")
+      .addEventListener("click", fnCabernetSauvignonBtn);
+    document
+      .getElementById("zinfandelBtn")
+      .addEventListener("click", fnZinfandelBtn);
+    document.getElementById("merlotBtn").addEventListener("click", fnMerlotBtn);
+    document
+      .getElementById("redBlendBtn")
+      .addEventListener("click", fnRedBlendBtn);
+    document
+      .getElementById("pinotNoirBtn")
+      .addEventListener("click", fnPinotNoirBtn);
+    document.getElementById("moreBtn").addEventListener("click", fnMoreBtn);
+
+    document
+      .getElementById("spend01Btn")
+      .addEventListener("click", fnSpend01Btn);
+    document
+      .getElementById("spend02Btn")
+      .addEventListener("click", fnSpend02Btn);
+    document
+      .getElementById("spend03Btn")
+      .addEventListener("click", fnSpend03Btn);
+    document
+      .getElementById("spend04Btn")
+      .addEventListener("click", fnSpend04Btn);
+    document
+      .getElementById("spend05Btn")
+      .addEventListener("click", fnSpend05Btn);
+    document
+      .getElementById("spend06Btn")
+      .addEventListener("click", fnSpend06Btn);
+
+    document
+      .getElementById("phoneNum0Btn")
+      .addEventListener("click", fnPhoneNum0Btn);
+    document
+      .getElementById("phoneNum1Btn")
+      .addEventListener("click", fnPhoneNum1Btn);
+    document
+      .getElementById("phoneNum2Btn")
+      .addEventListener("click", fnPhoneNum2Btn);
+    document
+      .getElementById("phoneNum3Btn")
+      .addEventListener("click", fnPhoneNum3Btn);
+    document
+      .getElementById("phoneNum4Btn")
+      .addEventListener("click", fnPhoneNum4Btn);
+    document
+      .getElementById("phoneNum5Btn")
+      .addEventListener("click", fnPhoneNum5Btn);
+    document
+      .getElementById("phoneNum6Btn")
+      .addEventListener("click", fnPhoneNum6Btn);
+    document
+      .getElementById("phoneNum7Btn")
+      .addEventListener("click", fnPhoneNum7Btn);
+    document
+      .getElementById("phoneNum8Btn")
+      .addEventListener("click", fnPhoneNum8Btn);
+    document
+      .getElementById("phoneNum9Btn")
+      .addEventListener("click", fnPhoneNum9Btn);
+
+    document.getElementById("adPrev").addEventListener("click", fnPrevBtn);
+    document.getElementById("adNext").addEventListener("click", fnNextBtn);
+
+    document.getElementById("submitBtn").addEventListener("click", fnSubmitBtn);
+
+    vid.currentTime = 0;
+    vid.play();
+    vid.pause();
+    //alert("sdfsdfs");
+    vid.onloadeddata = function () {
+      //   alert("Browser has loaded the current frame");
+      bCanPlay = true;
+    };
+
+    // vid.addEventListener("canplaythrough", function() {
+    //     vid.currentTime = 0;
+    //     vid.play();
+    //     vid.pause();
+    // });
+
+    $("#adBg").click(function () {
+      //$("input").trigger("select");
+      $("#embed_1").fadeOut(200);
+      $("#el_1").fadeOut(200);
+
+      oBtn[43].isShow = true;
+      console.log("adBg");
+      fnBtn("SecondScene");
+    });
+
+    function fnBtn(btnName) {
+      switch (btnName) {
+        case "startBtn":
+          //if(isShowStartBtn == true) {
+          if (bCanPlay == true) {
+            isPlaying = true;
+
+            step++;
+            oBtn[0].step = step;
+            //document.getElementById('startBtn').style.display = "none";
+            // fading out
+            // $("#startBtn").fadeOut(100);
+            $("#startBtn").fadeOut(0);
+            $(".questionContainer").eq(0).fadeIn(200);
+            // $(".no-box").eq(0).fadeOut(100);
+            // $(".yes-box").eq(0).fadeOut(100);
+            $(".no-box").eq(0).fadeOut(0);
+            $(".yes-box").eq(0).fadeOut(0);
+
+            // vid.currentTime = 0.01;
+            // vid.play();
+            // vid.addEventListener("canplaythrough", function() {
+            //     vid.currentTime = 0;
+            //     vid.play();
+            // });
+            //vid.play();
+
+            vid1.currentTime = 0;
+            vid2.currentTime = 0;
+            vid1.play();
+            vid1.pause();
+            vid2.play();
+            vid2.pause();
+
+            vid.currentTime = 0;
+            vid.play();
+
+            //document.getElementsByClassName('questionContainer')[0].style.display = "block";
+            let str = `<span class="text_16 " style="color: white; font-family: Teko-Regular;">
+                                        <p class='element canIHelpPadding'></p>
+                                    </span>`;
+            document.getElementsByClassName("question-box")[0].innerHTML = str;
+
+            str = `<span class="buttonText_16" style="color: white; font-family: Teko-Regular;">
+                                <p>Yes, let’s shop</p>
+                            </span>`;
+            document.getElementsByClassName("yes-box")[0].innerHTML = str;
+
+            // $(".question-box").css("padding-top", "0px");
+
+            new TypeIt(".element", {
+              strings: [
+                "Can I help You Shop for ",
+                "Any Beer, Wine or Spirits",
+                "Today?",
+              ],
+              cursor: false,
+              speed: 23,
+            }).go();
+            setTimeout(function () {
+              // $(".answerContainer").eq(0).css("display", "block");
+              $(".answerContainer").eq(0).css("display", "flex");
+              $(".yes-box").eq(0).animate({ top: "150px" });
+              $(".yes-box").eq(0).fadeIn(200);
+
+              vid.pause();
+            }, 3700);
+          }
+          // else {
+          //     isPlaying = false;
+          //     vid.pause();
+          // }
+          break;
+
+        case "backBtn":
+          if (oBtn[2].isShow == true) {
+            if (vid.paused == true && vid1.paused == true) {
+              //vid.currentTime = 0;
+              isPlaying = true;
+              if (step < 6 || step == 12 || step == 13 || step == 15) step -= 2;
+              else if (step == 14 || step == 16) {
+                step -= 3;
+              } else step--;
+              console.log("step = ", step);
+
+              if (step == 0) {
+                vid.currentTime = 0;
+                oBtn[0].isShow = true;
+                oBtn[0].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+
+                //$(".no-box").eq(0).fadeOut(100);
+
+                fnBtn("startBtn");
+              } else if (step == 2) {
+                step--;
+                vid.currentTime = 3.4;
+                oBtn[0].isShow = true;
+                oBtn[0].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("yesBtn");
+              } else if (step == 3) {
+                step--;
+                vid.currentTime = 5;
+                oBtn[1].isShow = true;
+                oBtn[1].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("noBtn");
+              } else if (step == 5) {
+                step--;
+                vid.currentTime = 13.2;
+                oBtn[3].isShow = true;
+                oBtn[3].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("wineBtn");
+              } else if (step == 6) {
+                step--;
+                vid.currentTime = 16.63;
+                oBtn[7].isShow = true;
+                oBtn[7].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("redBtn");
+              } else if (step == 7) {
+                step--;
+                vid.currentTime = 21.2;
+                oBtn[11].isShow = true;
+                oBtn[11].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("relaxingBtn");
+              } else if (step == 8) {
+                step--;
+                vid.currentTime = 25.4;
+                oBtn[15].isShow = true;
+                oBtn[15].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("chooseBtn");
+              } else if (step == 9) {
+                step--;
+                vid.currentTime = 28.5;
+                oBtn[17].isShow = true;
+                oBtn[17].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                fnBtn("cabernetSauvignonBtn");
+              } else if (step == 10) {
+                step--;
+                vid.currentTime = 31;
+                oBtn[23].isShow = true;
+                oBtn[23].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                noWorkStart = true;
+                fnBtn("spend01Btn");
+              } else if (step == 11) {
+                step--;
+                //vid.currentTime = 31;
+                oBtn[40].isShow = true;
+                oBtn[40].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                noWorkStart = true;
+                fnBtn("submitBtn");
+              } else if (step == 13) {
+                step--;
+                //vid.currentTime = 31;
+                oBtn[43].isShow = true;
+                oBtn[43].step = step;
+                $(".backContainer").eq(0).fadeOut(100);
+                noWorkStart = true;
+                fnBtn("secondPickNext");
+              }
+              // else if (step == 14) {
+              //     step--;
+              //     //vid.currentTime = 31;
+              //     oBtn[43].isShow = true;
+              //     oBtn[43].step = step;
+              //     $(".backContainer").eq(0).fadeOut(100);
+              //     noWorkStart = true;
+              //     fnBtn("thirdPickNext");
+              // }
+              // else if (step == 13) {
+              //     step--;
+              //     //vid.currentTime = 31;
+              //     oBtn[43].isShow = true;
+              //     oBtn[43].step = step;
+              //     $(".backContainer").eq(0).fadeOut(100);
+              //     fnBtn("thirdPickNext");
+              // }
+
+              // else if(step == 12) {
+              //     step--;
+              //     vid.currentTime = 38;
+              //    // oBtn[23].isShow = true;
+              //    // oBtn[23].step = step;
+              //     $(".backContainer").eq(0).fadeOut(100);
+              //     fnBtn("spend01Btn");
+              // }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+          }
+          break;
+        case "noBtn":
+          console.log("oBtn[1].isShow = ", oBtn[1].isShow);
+          if (oBtn[1].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+
+              console.log("step =  ", step);
+              if (step == 3) {
+                vid.currentTime = 5;
+                vid.play();
+                $(".question-box").eq(0).fadeOut(200);
+                // $(".question-box").eq(0).fadeOut(300);
+                // $(".backContainer").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                        <p class='element myNameIsBoozyBob'></p>
+                                    </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Great, my name is boozy bob ",
+                    "and I am the world’s smartest",
+                    "beverage expert.",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("padding-top", "0px");
+
+                // fading out
+                $(".question-box").eq(0).fadeIn(200);
+                // $(".no-box").eq(0).fadeOut(200);
+                // $(".yes-box").eq(0).fadeOut(200);
+                $(".no-box").eq(0).fadeOut(0);
+                $(".yes-box").eq(0).fadeOut(0);
+
+                // $(".red-box").eq(0).fadeOut(200);
+                // $(".white-box").eq(0).fadeOut(200);
+                // $(".sparkling-box").eq(0).fadeOut(200);
+                // $(".otherColor-box").eq(0).fadeOut(200);
+                $(".red-box").eq(0).fadeOut(0);
+                $(".white-box").eq(0).fadeOut(0);
+                $(".sparkling-box").eq(0).fadeOut(0);
+                $(".otherColor-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  //  $(".backContainer").eq(0).fadeIn(200);
+                  oBtn[1].isShow = true;
+                  vid.pause();
+                  fnBtn("noBtn");
+                }, 4900);
+              }
+              if (step == 4) {
+                vid.currentTime = 9.7;
+                vid.play();
+                $(".question-box").eq(0).fadeOut(200);
+
+                let str = `<span class="text_16" style="color: white; font-family: Teko-Regular;">
+                                        <p class='element myNameIsBoozyBob'></p>
+                                    </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Are you looking for wine, ",
+                    "spirits, beer or something",
+                    "else?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                $(".question-box").eq(0).fadeIn(200);
+
+                setTimeout(function () {
+                  oBtn[1].isShow = false;
+                  vid.pause();
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  $(".wine-box").eq(0).fadeIn(200);
+                  $(".beer-box").eq(0).fadeIn(200);
+                  $(".spirits-box").eq(0).fadeIn(200);
+                  $(".other-box").eq(0).fadeIn(200);
+                  oBtn[3].isShow = true;
+                }, 3800);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            oBtn[0].isShow = false;
+          }
+          break;
+
+        case "wineBtn":
+          console.log("oBtn[3].isShow = ", oBtn[3].isShow);
+          if (oBtn[3].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 13.2;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 5) {
+                //$(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element areYouLookingForRed'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Okay, are you looking for ",
+                    "Red, White, Sparkling or",
+                    "something else?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // fading out
+                // $(".wine-box").eq(0).fadeOut(200);
+                // $(".beer-box").eq(0).fadeOut(200);
+                // $(".spirits-box").eq(0).fadeOut(200);
+                // $(".other-box").eq(0).fadeOut(200);
+                $(".wine-box").eq(0).fadeOut(0);
+                $(".beer-box").eq(0).fadeOut(0);
+                $(".spirits-box").eq(0).fadeOut(0);
+                $(".other-box").eq(0).fadeOut(0);
+
+                // $(".relaxing-box").eq(0).fadeOut(200);
+                // $(".socializing-box").eq(0).fadeOut(200);
+                // $(".gifting-box").eq(0).fadeOut(200);
+                // $(".mealPairing-box").eq(0).fadeOut(200);
+                $(".relaxing-box").eq(0).fadeOut(0);
+                $(".socializing-box").eq(0).fadeOut(0);
+                $(".gifting-box").eq(0).fadeOut(0);
+                $(".mealPairing-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+                  oBtn[3].isShow = false;
+                  vid.pause();
+                  $(".red-box").eq(0).fadeIn(200);
+                  $(".white-box").eq(0).fadeIn(200);
+                  $(".sparkling-box").eq(0).fadeIn(200);
+                  $(".otherColor-box").eq(0).fadeIn(200);
+                  oBtn[7].isShow = true;
+                }, 3500);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            oBtn[3].isShow = false;
+          }
+          break;
+
+        case "redBtn":
+          console.log("oBtn[7].isShow = ", oBtn[7].isShow);
+          if (oBtn[7].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 16.63;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 6) {
+                //$(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element isThisForRelaxing'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Perfect, is this for relaxing, ",
+                    "socializing, gifting or pairing with a ",
+                    "meal?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("line-height", "35px");
+                // $(".question-box").eq(0).fadeIn(200);
+
+                // fading container
+                // $(".red-box").eq(0).fadeOut(200);
+                // $(".white-box").eq(0).fadeOut(200);
+                // $(".sparkling-box").eq(0).fadeOut(200);
+                // $(".otherColor-box").eq(0).fadeOut(200);
+                $(".red-box").eq(0).fadeOut(0);
+                $(".white-box").eq(0).fadeOut(0);
+                $(".sparkling-box").eq(0).fadeOut(0);
+                $(".otherColor-box").eq(0).fadeOut(0);
+
+                // $(".choose-box").eq(0).fadeOut(200);
+                // $(".surpriseMe-box").eq(0).fadeOut(200);
+                $(".choose-box").eq(0).fadeOut(0);
+                $(".surpriseMe-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+                  oBtn[7].isShow = false;
+                  vid.pause();
+                  $(".relaxing-box").eq(0).fadeIn(200);
+                  $(".socializing-box").eq(0).fadeIn(200);
+                  $(".gifting-box").eq(0).fadeIn(200);
+                  $(".mealPairing-box").eq(0).fadeIn(200);
+                  oBtn[11].isShow = true;
+                  oBtn[12].isShow = true;
+                  oBtn[13].isShow = true;
+                }, 4850);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            oBtn[7].isShow = false;
+          }
+          break;
+
+        case "relaxingBtn":
+        case "socializingBtn":
+        case "giftingBtn":
+          console.log("oBtn[11].isShow = ", oBtn[11].isShow);
+          if (
+            oBtn[11].isShow == true ||
+            oBtn[12].isShow == true ||
+            oBtn[13].isShow == true
+          ) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 21.2;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 7) {
+                //$(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white; font-family: Teko-Regular;">
+                                    <p class='element wouldYouLikeToChoose'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "35px");
+                $(".question-box").css("padding-top", "3px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Would you like to choose ",
+                    "your favorite grape varietal, ",
+                    "or would you like me to<br>surprise you?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("height", "310px");
+                // $(".question-box").eq(0).css("background", "url(./assets/W1/quzBox02.svg)");
+                // $(".question-box").eq(0).css("background-repeat", "no-repeat");
+                // $(".question-box").eq(0).css("background-position", "-50px 0");
+                // $(".question-box").eq(0).css("background-size", "135% 150%");
+
+                //$(".question-box").eq(0).css("background-size", "105% 150%");
+                // $(".question-box").eq(0).fadeIn(200);
+
+                // fading out
+
+                // $(".relaxing-box").eq(0).fadeOut(200);
+                // $(".socializing-box").eq(0).fadeOut(200);
+                // $(".gifting-box").eq(0).fadeOut(200);
+                // $(".mealPairing-box").eq(0).fadeOut(200);
+                $(".relaxing-box").eq(0).fadeOut(0);
+                $(".socializing-box").eq(0).fadeOut(0);
+                $(".gifting-box").eq(0).fadeOut(0);
+                $(".mealPairing-box").eq(0).fadeOut(0);
+
+                // $(".cabernetSauvignon-box").eq(0).fadeOut(200);
+                // $(".zinfandel-box").eq(0).fadeOut(200);
+                // $(".merlot-box").eq(0).fadeOut(200);
+                // $(".redBlend-box").eq(0).fadeOut(200);
+                // $(".pinotNoir-box").eq(0).fadeOut(200);
+                // $(".more-box").eq(0).fadeOut(200);
+                $(".cabernetSauvignon-box").eq(0).fadeOut(0);
+                $(".zinfandel-box").eq(0).fadeOut(0);
+                $(".merlot-box").eq(0).fadeOut(0);
+                $(".redBlend-box").eq(0).fadeOut(0);
+                $(".pinotNoir-box").eq(0).fadeOut(0);
+                $(".more-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+                  // if(btnName == "relaxingBtn") oBtn[11].isShow = false;
+                  //  if(btnName == "socializingBtn") oBtn[12].isShow = false;
+                  //  if(btnName == "giftingBtn") oBtn[13].isShow = false;
+
+                  vid.pause();
+                  $(".choose-box").eq(0).fadeIn(200);
+                  $(".surpriseMe-box").eq(0).fadeIn(200);
+                  oBtn[15].isShow = true;
+                }, 4250);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            if (btnName == "relaxingBtn") oBtn[11].isShow = false;
+            if (btnName == "socializingBtn") oBtn[12].isShow = false;
+            if (btnName == "giftingBtn") oBtn[13].isShow = false;
+          }
+          break;
+        case "chooseBtn":
+          console.log("oBtn[15].isShow = ", oBtn[15].isShow);
+          if (oBtn[15].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 25.4;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 8) {
+                // $(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element varietalYouAreLookingFor'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "36px");
+                // $(".question-box").eq(0).css("line-height", "30px");
+                $(".question-box").css("padding-top", "10px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Please tell me what varietal ",
+                    "you are looking for today.",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("background", "url(./assets/W1/quzBox02.svg)");
+                // $(".question-box").eq(0).css("background-repeat", "no-repeat");
+                // $(".question-box").eq(0).css("background-position", "30px 0");
+                // $(".question-box").eq(0).css("background-size", "105% 120%");
+                // $(".question-box").eq(0).fadeIn(200);
+
+                // fading out
+                // $(".choose-box").eq(0).fadeOut(200);
+                // $(".surpriseMe-box").eq(0).fadeOut(200);
+                $(".choose-box").eq(0).fadeOut(0);
+                $(".surpriseMe-box").eq(0).fadeOut(0);
+
+                // $(".relaxing-box").eq(0).fadeOut(200);
+                // $(".socializing-box").eq(0).fadeOut(200);
+                // $(".gifting-box").eq(0).fadeOut(200);
+                // $(".mealPairing-box").eq(0).fadeOut(200);
+
+                // $(".spend01-box").eq(0).fadeOut(200);
+                // $(".spend02-box").eq(0).fadeOut(200);
+                // $(".spend03-box").eq(0).fadeOut(200);
+                // $(".spend04-box").eq(0).fadeOut(200);
+                // $(".spend05-box").eq(0).fadeOut(200);
+                // $(".spend06-box").eq(0).fadeOut(200);
+                $(".spend01-box").eq(0).fadeOut(0);
+                $(".spend02-box").eq(0).fadeOut(0);
+                $(".spend03-box").eq(0).fadeOut(0);
+                $(".spend04-box").eq(0).fadeOut(0);
+                $(".spend05-box").eq(0).fadeOut(0);
+                $(".spend06-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+                  vid.pause();
+                  $(".cabernetSauvignon-box").eq(0).fadeIn(200);
+                  $(".zinfandel-box").eq(0).fadeIn(200);
+                  $(".merlot-box").eq(0).fadeIn(200);
+                  $(".redBlend-box").eq(0).fadeIn(200);
+                  $(".pinotNoir-box").eq(0).fadeIn(200);
+                  $(".more-box").eq(0).fadeIn(200);
+                  oBtn[17].isShow = true;
+                }, 2800);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            oBtn[15].isShow = false;
+          }
+          break;
+
+        case "cabernetSauvignonBtn":
+        case "zinfandelBtn":
+        case "merlotBtn":
+        case "redBlendBtn":
+        case "pinotNoirBtn":
+          console.log("oBtn[17].isShow = ", oBtn[17].isShow);
+          if (
+            oBtn[17].isShow == true ||
+            oBtn[18].isShow == true ||
+            oBtn[19].isShow == true ||
+            oBtn[20].isShow == true ||
+            oBtn[21].isShow == true
+          ) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 28.5;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 9) {
+                // $(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element howMuchAreYouLookingToSpend'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "36px");
+                // $(".question-box").eq(0).css("line-height", "34px");
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Last question, how much ",
+                    "are you looking to spend ",
+                    "today?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("background", "url(./assets/W1/quzBox02.svg)");
+                // $(".question-box").eq(0).css("background-repeat", "no-repeat");
+                // $(".question-box").eq(0).css("background-position", "25px 30px");
+                // $(".question-box").eq(0).css("background-size", "105% 120%");
+                // $(".question-box").eq(0).fadeIn(200);
+
+                // fading out
+                // $(".choose-box").eq(0).fadeOut(200);
+                // $(".surpriseMe-box").eq(0).fadeOut(200);
+                $(".choose-box").eq(0).fadeOut(0);
+                $(".surpriseMe-box").eq(0).fadeOut(0);
+
+                // $(".cabernetSauvignon-box").eq(0).fadeOut(200);
+                // $(".zinfandel-box").eq(0).fadeOut(200);
+                // $(".merlot-box").eq(0).fadeOut(200);
+                // $(".redBlend-box").eq(0).fadeOut(200);
+                // $(".pinotNoir-box").eq(0).fadeOut(200);
+                // $(".more-box").eq(0).fadeOut(200);
+                // $(".phoneContainer").eq(0).fadeOut(200);
+                $(".cabernetSauvignon-box").eq(0).fadeOut(0);
+                $(".zinfandel-box").eq(0).fadeOut(0);
+                $(".merlot-box").eq(0).fadeOut(0);
+                $(".redBlend-box").eq(0).fadeOut(0);
+                $(".pinotNoir-box").eq(0).fadeOut(0);
+                $(".more-box").eq(0).fadeOut(0);
+                $(".phoneContainer").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  vid.pause();
+                  $(".spend01-box").eq(0).fadeIn(200);
+                  $(".spend02-box").eq(0).fadeIn(200);
+                  $(".spend03-box").eq(0).fadeIn(200);
+                  $(".spend04-box").eq(0).fadeIn(200);
+                  $(".spend05-box").eq(0).fadeIn(200);
+                  $(".spend06-box").eq(0).fadeIn(200);
+
+                  //$(".choose-box").eq(0).fadeIn(200);
+                  //$(".surpriseMe-box").eq(0).fadeIn(200);
+
+                  oBtn[23].isShow = true;
+                }, 3100);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            if (btnName == "cabernetSauvignonBtn") oBtn[17].isShow = false;
+            if (btnName == "zinfandelBtn") oBtn[18].isShow = false;
+            if (btnName == "merlotBtn") oBtn[19].isShow = false;
+            if (btnName == "redBlendBtn") oBtn[20].isShow = false;
+            if (btnName == "pinotNoirBtn") oBtn[21].isShow = false;
+          }
+          break;
+
+        case "spend01Btn":
+        case "spend02Btn":
+        case "spend03Btn":
+        case "spend04Btn":
+        case "spend05Btn":
+        case "spend06Btn":
+          console.log("oBtn[23].isShow = ", oBtn[23].isShow);
+          if (
+            oBtn[23].isShow == true ||
+            oBtn[24].isShow == true ||
+            oBtn[25].isShow == true ||
+            oBtn[26].isShow == true ||
+            oBtn[27].isShow == true ||
+            oBtn[28].isShow == true
+          ) {
+            if (vid.paused == true) {
+              isPlaying = true;
+
+              vid2.pause();
+              step++;
+              vid.currentTime = 31.1;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 10) {
+                // $(".question-box").eq(0).fadeOut(200);
+                $(".backContainer").eq(0).fadeOut(0);
+                $("#bodyBg").eq(0).fadeOut(200);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element enterYourPhoneNumber'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "30px");
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Please enter your cell phone number ",
+                    "and I will text you my Top 3 picks ",
+                    "along with where the alcohol in the ",
+                    "store is located.",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("background", "url(./assets/W1/quzBox02.svg)");
+                // $(".question-box").eq(0).css("background-repeat", "no-repeat");
+                // $(".question-box").eq(0).css("background-position", "25px 30px");
+                // $(".question-box").eq(0).css("background-size", "105% 120%");
+                // $(".question-box").eq(0).fadeIn(200);
+                // $(".choose-box").eq(0).fadeOut(200);
+                // $(".surpriseMe-box").eq(0).fadeOut(200);
+                $(".question-box").eq(0).fadeIn(0);
+                $(".choose-box").eq(0).fadeOut(0);
+                $(".surpriseMe-box").eq(0).fadeOut(0);
+
+                // $(".spend01-box").eq(0).fadeOut(200);
+                // $(".spend02-box").eq(0).fadeOut(200);
+                // $(".spend03-box").eq(0).fadeOut(200);
+                // $(".spend04-box").eq(0).fadeOut(200);
+                // $(".spend05-box").eq(0).fadeOut(200);
+                // $(".spend06-box").eq(0).fadeOut(200);
+                $(".spend01-box").eq(0).fadeOut(0);
+                $(".spend02-box").eq(0).fadeOut(0);
+                $(".spend03-box").eq(0).fadeOut(0);
+                $(".spend04-box").eq(0).fadeOut(0);
+                $(".spend05-box").eq(0).fadeOut(0);
+                $(".spend06-box").eq(0).fadeOut(0);
+
+                // $(".noTnk-box").eq(0).fadeOut(200);
+                // $(".keepShopping-box").eq(0).fadeOut(200);
+                $(".noTnk-box").eq(0).fadeOut(0);
+                $(".keepShopping-box").eq(0).fadeOut(0);
+
+                $("#embed_1").fadeOut(200);
+                $("#el_1").fadeOut(200);
+
+                // $(".nextRecomd-box").eq(0).fadeOut(200);
+                // $(".textMe-box").eq(0).fadeOut(200);
+                // $(".noTnk-box").eq(0).fadeOut(200);
+                $(".nextRecomd-box").eq(0).fadeOut(0);
+                $(".textMe-box").eq(0).fadeOut(0);
+                $(".noTnk-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  vid.pause();
+                  sCellPhoneNum = "";
+                  oBtn[40].isShow = false;
+                  step = 10;
+
+                  var str = `<span class="text_14" style="color: white; font-family: Teko-Regular;">ENTER YOUR CELL NUMBER   </span>`;
+                  document.getElementById("sCellPhoneNum").innerHTML = str;
+                  $(".phoneContainer").eq(0).fadeIn(200);
+                }, 6000);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            if (btnName == "cabernetSauvignonBtn") oBtn[17].isShow = false;
+            if (btnName == "zinfandelBtn") oBtn[18].isShow = false;
+            if (btnName == "merlotBtn") oBtn[19].isShow = false;
+            if (btnName == "redBlendBtn") oBtn[20].isShow = false;
+            if (btnName == "pinotNoirBtn") oBtn[21].isShow = false;
+          }
+          break;
+        case "SecondScene":
+          //console.log("oBtn[23].isShow = ", oBtn[23].isShow);
+          if (oBtn[43].isShow == true) {
+            if (vid2.paused == true) {
+              isPlaying = true;
+              step++;
+              // vid2.currentTime = 0;
+              // vid2.play();
+              console.log("step = ", step);
+              if (step == 12) {
+                //  $(".question-box").eq(0).fadeOut(200);
+
+                $("#embed_2").fadeIn(200);
+                $("#embed_1").fadeOut(200);
+                //$("#embed_2").css('display', 'block');
+                vid2.currentTime = 0;
+                vid2.play();
+                // $("#embed_2").currentTime = 0;
+                // $("#embed_2").play();
+
+                $("#el_1").fadeOut(200);
+
+                //$(".backContainer").eq(0).fadeIn(200);
+                $("#bodyBg").eq(0).fadeOut(200);
+
+                $(".backContainer").eq(0).fadeOut(0);
+
+                //$(".question-box").eq(0).css("height", "320px");
+                $(".question-box").eq(0).fadeIn(200);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                    <p class='element wouldYouLikeToSeeAnotherRecommendation'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "30px");
+                // $(".question-box").eq(0).css("line-height", "30px");
+                $(".question-box").css("padding-top", "15px");
+                new TypeIt(".element", {
+                  strings: [
+                    "WOULD YOU LIKE TO SEE",
+                    "MY SECOND",
+                    "RECOMMENDATION?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".noTnk-box").eq(0).fadeIn(200);
+                // $(".keepShopping-box").eq(0).fadeIn(200);
+
+                setTimeout(function () {
+                  //
+                  // $(".keepShopping-box").eq(0).fadeIn(200);
+                  $(".nextRecomd-box").eq(0).fadeIn(200);
+                  $(".textMe-box").eq(0).fadeIn(200);
+                  $(".noTnk-box").eq(0).fadeIn(200);
+                  $(".noTnk-box").eq(0).css("top", "251px");
+
+                  oBtn[43].isShow = true;
+                  //fnBtn("secondPickNext");
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+                  vid2.pause();
+                }, 2500);
+              }
+            } else {
+              isPlaying = false;
+              vid2.pause();
+            }
+          }
+          break;
+
+        case "ThirdScene":
+          //console.log("oBtn[23].isShow = ", oBtn[23].isShow);
+          if (oBtn[43].isShow == true) {
+            if (vid2.paused == true) {
+              isPlaying = true;
+              step++;
+              // vid2.currentTime = 2.5;
+              // vid2.play();
+              console.log("step = ", step);
+              if (step == 14) {
+                //  $(".question-box").eq(0).fadeOut(200);
+
+                $("#embed_2").fadeIn(200);
+                $("#embed_1").fadeOut(200);
+                //$("#embed_2").css('display', 'block');
+                vid2.currentTime = 2.5;
+                vid2.play();
+                $("#el_1").fadeOut(200);
+
+                //$(".backContainer").eq(0).fadeIn(200);
+                $("#bodyBg").eq(0).fadeOut(200);
+
+                $(".backContainer").eq(0).fadeOut(0);
+
+                //$(".question-box").eq(0).css("height", "320px");
+                $(".question-box").eq(0).fadeIn(200);
+
+                let str = `<span class="text_16" style="color: white; font-family: Teko-Regular;">
+                                    <p class='element wouldYouLikeToSeeAnotherRecommendation'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "30px");
+                // $(".question-box").eq(0).css("line-height", "30px");
+                $(".question-box").css("padding-top", "15px");
+                new TypeIt(".element", {
+                  strings: [
+                    "WOULD YOU LIKE TO SEE",
+                    "MY THIRD",
+                    "RECOMMENDATION?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                setTimeout(function () {
+                  // $(".noTnk-box").eq(0).fadeIn(200);
+                  // $(".keepShopping-box").eq(0).fadeIn(200);
+
+                  $(".nextRecomd-box").eq(0).fadeIn(200);
+                  $(".textMe-box").eq(0).fadeIn(200);
+                  $(".noTnk-box").eq(0).fadeIn(200);
+                  $(".noTnk-box").eq(0).css("top", "251px");
+
+                  //fnBtn("thirdPickNext");
+
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  vid2.pause();
+                }, 3600);
+              }
+            } else {
+              isPlaying = false;
+              vid2.pause();
+            }
+          }
+          break;
+        case "lastScene":
+          //console.log("oBtn[23].isShow = ", oBtn[23].isShow);
+          if (oBtn[40].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              vid.currentTime = 83;
+              vid.play();
+              console.log("step = ", step);
+              if (step == 16) {
+                //  $(".question-box").eq(0).fadeOut(200);
+
+                $("#embed_1").fadeOut(200);
+                $("#el_1").fadeOut(200);
+
+                //$(".backContainer").eq(0).fadeIn(200);
+                $("#bodyBg").eq(0).fadeOut(200);
+
+                $(".backContainer").eq(0).fadeOut(0);
+
+                //$(".question-box").eq(0).css("height", "320px");
+                $(".question-box").eq(0).fadeIn(200);
+
+                let str = `<span class="pleaseCheckPhoneText" style="color: white; font-family: Teko-Regular;">
+                                    <p class='element pleaseCheckYourPhone'></p>
+                                </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                // $(".question-box").eq(0).css("line-height", "25px");
+                // $(".question-box").eq(0).css("font-size", "16px");
+                $(".question-box").css("padding-top", "5px");
+                new TypeIt(".element", {
+                  strings: [
+                    "Please check your phone for ",
+                    "directions to the aisle and shelf ",
+                    "number of my top 3 picks. Is there ",
+                    "anything else I can help you with",
+                    "today?",
+                  ],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                setTimeout(function () {
+                  $(".noTnk-box").eq(0).fadeIn(200);
+                  $(".noTnk-box").eq(0).css("top", "160px");
+                  $(".keepShopping-box").eq(0).fadeIn(200);
+
+                  // $(".backContainer").eq(0).css("top", "630px");
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  vid.pause();
+                }, 7600);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+          }
+          break;
+
+        case "submitBtn":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[40].isShow == true) {
+            if (vid1.paused == true) {
+              step++;
+              //vid1.currentTime = 37.3;
+              //vid1.play();
+              console.log("step = ", step);
+              if (step == 11) {
+                // fading out
+                // $(".choose-box").eq(0).fadeOut(200);
+                // $(".surpriseMe-box").eq(0).fadeOut(200);
+                $(".choose-box").eq(0).fadeOut(0);
+                $(".surpriseMe-box").eq(0).fadeOut(0);
+
+                // $(".spend01-box").eq(0).fadeOut(200);
+                // $(".spend02-box").eq(0).fadeOut(200);
+                // $(".spend03-box").eq(0).fadeOut(200);
+                // $(".spend04-box").eq(0).fadeOut(200);
+                // $(".spend05-box").eq(0).fadeOut(200);
+                // $(".spend06-box").eq(0).fadeOut(200);
+                $(".spend01-box").eq(0).fadeOut(0);
+                $(".spend02-box").eq(0).fadeOut(0);
+                $(".spend03-box").eq(0).fadeOut(0);
+                $(".spend04-box").eq(0).fadeOut(0);
+                $(".spend05-box").eq(0).fadeOut(0);
+                $(".spend06-box").eq(0).fadeOut(0);
+
+                $(".question-box").eq(0).fadeOut(200);
+                $(".phoneContainer").eq(0).fadeOut(200);
+
+                // $(".keepShopping-box").eq(0).fadeOut(200);
+                // $(".noTnk-box").eq(0).fadeOut(200);
+                $(".keepShopping-box").eq(0).fadeOut(0);
+                $(".noTnk-box").eq(0).fadeOut(0);
+
+                $(".backContainer").eq(0).fadeOut(0);
+
+                $("#embed_2").fadeOut(200);
+
+                // $(".nextRecomd-box").eq(0).fadeOut(200);
+                // $(".textMe-box").eq(0).fadeOut(200);
+                // $(".noTnk-box").eq(0).fadeOut(200);
+                $(".nextRecomd-box").eq(0).fadeOut(0);
+                $(".textMe-box").eq(0).fadeOut(0);
+                $(".noTnk-box").eq(0).fadeOut(0);
+                //$("#el_1").fadeIn(200);
+
+                // $("#embed_1").css("display", "block");
+                $("#embed_1").fadeIn(200);
+                //vid1.currentTime = 37.3;
+                vid1.currentTime = 37.3;
+                vid1.play();
+                $("#el_1").fadeIn(200);
+
+                $(".backContainer").eq(0).fadeIn(500);
+                $("#bodyBg").eq(0).fadeIn(500);
+
+                document.getElementById("prevTxt").innerHTML =
+                  "<p>3rd<br>PICK</p>";
+                document.getElementById("nextTxt").innerHTML =
+                  "<p>2nd<br>PICK</p>";
+                document.getElementById("adPic").innerHTML = "<p>TOP PICK</p>";
+
+                noWorkStart = true;
+
+                setTimeout(function () {
+                  // $("#bodyBg").eq(0).fadeOut(200);
+                  vid1.pause();
+                  //step--;
+                  noWorkStart = false;
+                  $(".backContainer").eq(0).fadeIn(200);
+
+                  // $("#embed_1").fadeOut(200);
+                  // $("#el_1").fadeOut(200);
+
+                  // oBtn[43].isShow = true;
+                  //fnBtn("SecondScene");
+
+                  //  fnBtn("lastScene");
+                }, 16900);
+                setTimeout(function () {
+                  if (noWorkStart == false) {
+                    // step++;
+                    $("#embed_1").fadeOut(200);
+                    $("#el_1").fadeOut(200);
+
+                    oBtn[43].isShow = true;
+                    //$("#embed_2").trigger("click");
+                    fnBtn("SecondScene");
+
+                    // $("#adBg").trigger("click");
+                  }
+                }, 17900);
+              }
+            } else {
+              isPlaying = false;
+              vid1.pause();
+            }
+          }
+          break;
+        case "topPickPrev":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[40].isShow == true) {
+            // if (vid1.paused == false) vid1.pause();
+
+            step++;
+            vid1.currentTime = 37.3;
+            vid1.play();
+            console.log("step = ", step);
+            if (step == 11) {
+              $(".backContainer").eq(0).fadeOut(0);
+
+              $("#embed_1").fadeIn(200);
+              $("#el_1").fadeIn(200);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              // $("#bodyBg").eq(0).fadeIn(500);
+
+              document.getElementById("prevTxt").innerHTML =
+                "<p>3rd<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>2nd<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>TOP PICK</p>";
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeOut(20);
+              $("#adPic").fadeOut(20);
+              $("#adLost").fadeOut(20);
+              $("#adValue").fadeOut(20);
+
+              $("#ad94").fadeOut(20);
+              $("#ad14Alc").fadeOut(20);
+              $("#adSw").fadeOut(20);
+              $("#adDesc").fadeOut(20);
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeIn(100);
+              $("#adPic").fadeIn(100);
+              $("#adLost").fadeIn(100);
+              $("#adValue").fadeIn(100);
+
+              $("#ad94").fadeIn(100);
+              $("#ad14Alc").fadeIn(100);
+              $("#adSw").fadeIn(100);
+              $("#adDesc").fadeIn(100);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                // $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                // step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //  fnBtn("lastScene");
+              }, 16900);
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //  step++;
+
+                  fnBtn("lastScene");
+                }
+              }, 26900);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+        case "secondPackPrev":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[40].isShow == true) {
+            //  if (vid1.paused == false) vid1.pause();
+
+            step++;
+            vid1.currentTime = 54;
+            vid1.play();
+            console.log("step = ", step);
+            if (step == 11) {
+              // fading out
+              // $(".question-box").eq(0).fadeOut(200);
+              // $(".phoneContainer").eq(0).fadeOut(200);
+              // $(".backContainer").eq(0).fadeOut(200);
+              $(".question-box").eq(0).fadeOut(0);
+              $(".phoneContainer").eq(0).fadeOut(0);
+              $(".backContainer").eq(0).fadeOut(0);
+              // $("#embed_1").css("display", "block");
+              // $("#embed_1").fadeIn(200);
+              // $("#el_1").fadeIn(200);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              // $("#bodyBg").eq(0).fadeIn(500);
+              document.getElementById("prevTxt").innerHTML =
+                "<p>Top<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>3rd<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>SECOND PICK</p>";
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeOut(20);
+              $("#adPic").fadeOut(20);
+              $("#adLost").fadeOut(20);
+              $("#adValue").fadeOut(20);
+
+              $("#ad94").fadeOut(20);
+              $("#ad14Alc").fadeOut(20);
+              $("#adSw").fadeOut(20);
+              $("#adDesc").fadeOut(20);
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeIn(100);
+              $("#adPic").fadeIn(100);
+              $("#adLost").fadeIn(100);
+              $("#adValue").fadeIn(100);
+
+              $("#ad94").fadeIn(100);
+              $("#ad14Alc").fadeIn(100);
+              $("#adSw").fadeIn(100);
+              $("#adDesc").fadeIn(100);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                //  $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                //step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //fnBtn("lastScene");
+              }, 14200);
+
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //  step++;
+                  fnBtn("lastScene");
+                }
+              }, 24200);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+        case "thirdPackPrev":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[40].isShow == true) {
+            // if (vid1.paused == false) vid1.pause();
+            step++;
+            vid1.currentTime = 68;
+            vid1.play();
+            console.log("step = ", step);
+            if (step == 11) {
+              // $(".question-box").eq(0).fadeOut(200);
+              // $(".phoneContainer").eq(0).fadeOut(200);
+              // $(".backContainer").eq(0).fadeOut(200);
+              // $("#embed_1").css("display", "block");
+              // $("#embed_1").fadeIn(200);
+              // $("#el_1").fadeIn(200);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              // $("#bodyBg").eq(0).fadeIn(500);
+
+              document.getElementById("prevTxt").innerHTML =
+                "<p>2nd<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>Top<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>THIRD PICK</p>";
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeOut(20);
+              $("#adPic").fadeOut(20);
+              $("#adLost").fadeOut(20);
+              $("#adValue").fadeOut(20);
+
+              $("#ad94").fadeOut(20);
+              $("#ad14Alc").fadeOut(20);
+              $("#adSw").fadeOut(20);
+              $("#adDesc").fadeOut(20);
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeIn(100);
+              $("#adPic").fadeIn(100);
+              $("#adLost").fadeIn(100);
+              $("#adValue").fadeIn(100);
+
+              $("#ad94").fadeIn(100);
+              $("#ad14Alc").fadeIn(100);
+              $("#adSw").fadeIn(100);
+              $("#adDesc").fadeIn(100);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                //  $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                // step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //fnBtn("lastScene");
+              }, 15000);
+
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //  step++;
+                  fnBtn("lastScene");
+                }
+              }, 25000);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+        case "topPickNext":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[40].isShow == true) {
+            //  if (vid1.paused == false) vid1.pause();
+            step++;
+            vid1.currentTime = 37.3;
+            vid1.play();
+            console.log("step = ", step);
+            if (step == 11) {
+              $(".question-box").eq(0).fadeOut(200);
+              // $(".phoneContainer").eq(0).fadeOut(200);
+              $(".phoneContainer").eq(0).fadeOut(0);
+              $(".backContainer").eq(0).fadeOut(0);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              $("#bodyBg").eq(0).fadeIn(500);
+
+              document.getElementById("prevTxt").innerHTML =
+                "<p>3rd<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>2nd<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>TOP PICK</p>";
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeOut(10);
+              $("#adPic").fadeOut(10);
+              $("#adLost").fadeOut(10);
+              $("#adValue").fadeOut(10);
+
+              $("#ad94").fadeOut(10);
+              $("#ad14Alc").fadeOut(10);
+              $("#adSw").fadeOut(10);
+              $("#adDesc").fadeOut(10);
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeIn(10);
+              $("#adPic").fadeIn(10);
+              $("#adLost").fadeIn(10);
+              $("#adValue").fadeIn(10);
+
+              $("#ad94").fadeIn(10);
+              $("#ad14Alc").fadeIn(10);
+              $("#adSw").fadeIn(10);
+              $("#adDesc").fadeIn(10);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                // $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                //  step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //  fnBtn("lastScene");
+              }, 16900);
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //    step++;
+
+                  fnBtn("lastScene");
+                }
+              }, 26900);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+        case "secondPickNext":
+          console.log("oBtn[43].isShow = ", oBtn[43].isShow);
+          if (oBtn[43].isShow == true) {
+            step++;
+            // vid1.currentTime = 54;
+            // vid1.play();
+            console.log("step = ", step);
+            if (step == 13) {
+              $(".question-box").eq(0).fadeOut(200);
+              $(".phoneContainer").eq(0).fadeOut(0);
+              $(".backContainer").eq(0).fadeOut(0);
+              // $("#embed_1").css("display", "block");
+              $("#embed_1").fadeIn(200);
+              $("#el_1").fadeIn(200);
+              vid1.currentTime = 54;
+              vid1.play();
+
+              // fading out
+              // $(".nextRecomd-box").eq(0).fadeOut(200);
+              // $(".textMe-box").eq(0).fadeOut(200);
+              // $(".noTnk-box").eq(0).fadeOut(200);
+              // $(".keepShopping-box").eq(0).fadeOut(200);
+              $(".nextRecomd-box").eq(0).fadeOut(0);
+              $(".textMe-box").eq(0).fadeOut(0);
+              $(".noTnk-box").eq(0).fadeOut(0);
+              $(".keepShopping-box").eq(0).fadeOut(0);
+
+              $("#embed_2").fadeOut(200);
+              //$("#embed_2").fadeOut(200);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              $("#bodyBg").eq(0).fadeIn(500);
+              document.getElementById("prevTxt").innerHTML =
+                "<p>Top<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>3rd<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>SECOND PICK</p>";
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeOut(100);
+              $("#adPic").fadeOut(100);
+              $("#adLost").fadeOut(100);
+              $("#adValue").fadeOut(100);
+
+              $("#ad94").fadeOut(100);
+              $("#ad14Alc").fadeOut(100);
+              $("#adSw").fadeOut(100);
+              $("#adDesc").fadeOut(100);
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeIn(100);
+              $("#adPic").fadeIn(100);
+              $("#adLost").fadeIn(100);
+              $("#adValue").fadeIn(100);
+
+              $("#ad94").fadeIn(100);
+              $("#ad14Alc").fadeIn(100);
+              $("#adSw").fadeIn(100);
+              $("#adDesc").fadeIn(100);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              // $("#embed_1").fadeIn(200);
+
+              // $("#el_1").fadeIn(200);
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                //  $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                //   step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //fnBtn("lastScene");
+              }, 14200);
+
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //     step++;
+                  //
+                  fnBtn("ThirdScene");
+                  //fnBtn("lastScene");
+                }
+              }, 15200);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+        case "thirdPickNext":
+          console.log("oBtn[40].isShow = ", oBtn[40].isShow);
+          if (oBtn[43].isShow == true) {
+            //   if (vid1.paused == false) vid1.pause();
+
+            step++;
+            //vid1.currentTime = 68;
+            //vid1.play();
+            console.log("step = ", step);
+            if (step == 15) {
+              $(".question-box").eq(0).fadeOut(200);
+              $(".phoneContainer").eq(0).fadeOut(0);
+              $(".backContainer").eq(0).fadeOut(0);
+              // $("#embed_1").css("display", "block");
+              $("#embed_1").fadeIn(200);
+              $("#el_1").fadeIn(200);
+
+              vid1.currentTime = 68;
+              vid1.play();
+
+              // fading out
+              // $(".nextRecomd-box").eq(0).fadeOut(200);
+              // $(".textMe-box").eq(0).fadeOut(200);
+              // $(".noTnk-box").eq(0).fadeOut(200);
+              $(".nextRecomd-box").eq(0).fadeOut(0);
+              $(".textMe-box").eq(0).fadeOut(0);
+              $(".noTnk-box").eq(0).fadeOut(0);
+
+              $("#embed_2").fadeOut(200);
+
+              $(".backContainer").eq(0).fadeIn(500);
+              $("#bodyBg").eq(0).fadeIn(500);
+
+              document.getElementById("prevTxt").innerHTML =
+                "<p>2nd<br>PICK</p>";
+              document.getElementById("nextTxt").innerHTML =
+                "<p>Top<br>PICK</p>";
+              document.getElementById("adPic").innerHTML = "<p>THIRD PICK</p>";
+
+              // $("#adBg").animate({ left: "200%" });
+              // $("#adPic").animate({ left: "200%" });
+              // $("#adLost").animate({ left: "200%" });
+              // $("#adValue").animate({ left: "200%" });
+
+              // $("#ad94").animate({ left: "200%" });
+              // $("#ad14Alc").animate({ left: "200%" });
+              // $("#adSw").animate({ left: "200%" });
+              // $("#adDesc").animate({ left: "200%" });
+
+              $("#adBg").fadeOut(100);
+              $("#adPic").fadeOut(100);
+              $("#adLost").fadeOut(100);
+              $("#adValue").fadeOut(100);
+
+              $("#ad94").fadeOut(100);
+              $("#ad14Alc").fadeOut(100);
+              $("#adSw").fadeOut(100);
+              $("#adDesc").fadeOut(100);
+
+              // $("#adBg").animate({ left: "-200%" });
+              // $("#adPic").animate({ left: "-200%" });
+              // $("#adLost").animate({ left: "-200%" });
+              // $("#adValue").animate({ left: "-200%" });
+
+              // $("#ad94").animate({ left: "-200%" });
+              // $("#ad14Alc").animate({ left: "-200%" });
+              // $("#adSw").animate({ left: "-200%" });
+              // $("#adDesc").animate({ left: "-200%" });
+
+              $("#adBg").fadeIn(100);
+              $("#adPic").fadeIn(100);
+              $("#adLost").fadeIn(100);
+              $("#adValue").fadeIn(100);
+
+              $("#ad94").fadeIn(100);
+              $("#ad14Alc").fadeIn(100);
+              $("#adSw").fadeIn(100);
+              $("#adDesc").fadeIn(100);
+
+              // $("#adBg").animate({ left: "76.5%" });
+              // $("#adPic").animate({ left: "105%" });
+              // $("#adLost").animate({ left: "106%" });
+              // $("#adValue").animate({ left: "107%" });
+
+              // $("#ad94").animate({ left: "104%" });
+              // $("#ad14Alc").animate({ left: "119%" });
+              // $("#adSw").animate({ left: "119%" });
+              // $("#adDesc").animate({ left: "85%" });
+
+              //$("#embed_1").fadeIn(200);
+
+              //$("#el_1").fadeIn(200);
+
+              noWorkStart = true;
+
+              setTimeout(function () {
+                //  $("#bodyBg").eq(0).fadeOut(200);
+                vid1.pause();
+                // step--;
+                noWorkStart = false;
+                $(".backContainer").eq(0).fadeIn(200);
+                //fnBtn("lastScene");
+              }, 15000);
+
+              setTimeout(function () {
+                if (noWorkStart == false) {
+                  //   step++;
+                  fnBtn("lastScene");
+                }
+              }, 16000);
+            }
+            // }
+            // else {
+            //     isPlaying = false;
+            //     vid1.pause()
+            // }
+          }
+          break;
+
+        case "phoneNum0Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "0";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum1Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "1";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum2Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "2";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum3Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "3";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum4Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "4";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum5Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "5";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum6Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "6";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum7Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "7";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum8Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "8";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "phoneNum9Btn":
+          if (sCellPhoneNum.length < 13) {
+            sCellPhoneNum += "9";
+            var str =
+              `<span class="text_14" style="color: white; font-family: Teko-Regular;">` +
+              sCellPhoneNum +
+              `</span>`;
+            document.getElementById("sCellPhoneNum").innerHTML = str;
+            oBtn[40].isShow = true;
+          }
+          break;
+        case "yesBtn":
+          console.log("oBtn[0].isShow = ", oBtn[0].isShow);
+          if (oBtn[0].isShow == true) {
+            if (vid.paused == true) {
+              isPlaying = true;
+              step++;
+              oBtn[2].step = step;
+              //vid.currentTime = 3000;
+              vid.currentTime = 3.4;
+              vid.play();
+              console.log("step =  ", step);
+              if (step == 2) {
+                //$(".yes-box").eq(0).fadeOut(200); //my addition
+                // fading out
+                $(".yes-box").eq(0).fadeOut(0); //my addition
+                $(".question-box").eq(0).fadeOut(200);
+
+                let str = `<span class="text_16" style="color: white;  font-family: Teko-Regular;">
+                                        <p class='element haveYouShoppedWith'></p>
+                                    </span>`;
+                document.getElementsByClassName("question-box")[0].innerHTML =
+                  str;
+                $(".question-box").css("padding-top", "0px");
+                new TypeIt(".element", {
+                  strings: ["Have you shopped with ", "me before?"],
+                  cursor: false,
+                  speed: 22,
+                }).go();
+
+                // $(".question-box").eq(0).css("padding-top", "20px");
+                $(".question-box").eq(0).fadeIn(200);
+
+                // fading out
+                // $(".wine-box").eq(0).fadeOut(200);
+                // $(".beer-box").eq(0).fadeOut(200);
+                // $(".spirits-box").eq(0).fadeOut(200);
+                // $(".other-box").eq(0).fadeOut(200);
+                $(".wine-box").eq(0).fadeOut(0);
+                $(".beer-box").eq(0).fadeOut(0);
+                $(".spirits-box").eq(0).fadeOut(0);
+                $(".other-box").eq(0).fadeOut(0);
+
+                setTimeout(function () {
+                  $(".no-box").eq(0).fadeIn(200);
+                  $(".yes-box").eq(0).fadeIn(200);
+                  let str = `<span class="buttonText_16" style="color: white; font-family: Teko-Regular;">
+                                        <p>Yes, I have</p>
+                                    </span>`;
+                  document.getElementsByClassName("yes-box")[0].innerHTML = str;
+                  $(".no-box").eq(0).animate({ top: "150px" });
+                  $(".yes-box").eq(0).animate({ top: "220px" });
+                  // $(".backContainer").eq(0).css("top", "630px");
+
+                  $(".backContainer").eq(0).fadeIn(200);
+                  oBtn[2].isShow = true;
+                  oBtn[1].isShow = true;
+                  vid.pause();
+                }, 1900);
+              }
+            } else {
+              isPlaying = false;
+              vid.pause();
+            }
+            oBtn[0].isShow = false;
+          }
+          break;
+        default:
+      }
+    }
+
+    function fnStartBtn(env) {
+      fnBtn("startBtn");
+    }
+
+    function fnBackBtn(env) {
+      fnBtn("backBtn");
+    }
+    function fnYesBtn(env) {
+      fnBtn("yesBtn");
+    }
+    function fnNoBtn(env) {
+      fnBtn("noBtn");
+    }
+
+    function fnWineBtn(env) {
+      fnBtn("wineBtn");
+    }
+    function fnBeerBtn(env) {
+      fnBtn("beerBtn");
+    }
+    function fnSpiritsBtn(env) {
+      fnBtn("spiritsBtn");
+    }
+    function fnOtherBtn(env) {
+      fnBtn("otherBtn");
+    }
+
+    function fnRedBtn(env) {
+      fnBtn("redBtn");
+    }
+    function fnWhiteBtn(env) {
+      fnBtn("whiteBtn");
+    }
+    function fnSparklingBtn(env) {
+      fnBtn("sparklingBtn");
+    }
+    function fnOtherColorBtn(env) {
+      fnBtn("otherColorBtn");
+    }
+
+    function fnRelaxingBtn(env) {
+      fnBtn("relaxingBtn");
+    }
+    function fnSocializingBtn(env) {
+      fnBtn("socializingBtn");
+    }
+    function fnGiftingBtn(env) {
+      fnBtn("giftingBtn");
+    }
+    function fnMealPairingBtn(env) {
+      fnBtn("mealPairingBtn");
+    }
+
+    function fnChooseBtn(env) {
+      fnBtn("chooseBtn");
+    }
+    function fnSurpriseMeBtn(env) {
+      fnBtn("surpriseMeBtn");
+    }
+
+    function fnCabernetSauvignonBtn(env) {
+      fnBtn("cabernetSauvignonBtn");
+    }
+    function fnZinfandelBtn(env) {
+      fnBtn("zinfandelBtn");
+    }
+
+    function fnMerlotBtn(env) {
+      fnBtn("merlotBtn");
+    }
+    function fnRedBlendBtn(env) {
+      fnBtn("redBlendBtn");
+    }
+
+    function fnPinotNoirBtn(env) {
+      fnBtn("pinotNoirBtn");
+    }
+    function fnMoreBtn(env) {
+      fnBtn("moreBtn");
+    }
+
+    function fnSpend01Btn(env) {
+      fnBtn("spend01Btn");
+    }
+    function fnSpend02Btn(env) {
+      fnBtn("spend02Btn");
+    }
+
+    function fnSpend03Btn(env) {
+      fnBtn("spend03Btn");
+    }
+    function fnSpend04Btn(env) {
+      fnBtn("spend04Btn");
+    }
+
+    function fnSpend05Btn(env) {
+      fnBtn("spend05Btn");
+    }
+    function fnSpend06Btn(env) {
+      fnBtn("spend06Btn");
+    }
+
+    function fnPhoneNum0Btn(env) {
+      fnBtn("phoneNum0Btn");
+    }
+
+    function fnPhoneNum1Btn(env) {
+      fnBtn("phoneNum1Btn");
+    }
+    function fnPhoneNum2Btn(env) {
+      fnBtn("phoneNum2Btn");
+    }
+
+    function fnPhoneNum3Btn(env) {
+      fnBtn("phoneNum3Btn");
+    }
+    function fnPhoneNum4Btn(env) {
+      fnBtn("phoneNum4Btn");
+    }
+    function fnPhoneNum5Btn(env) {
+      fnBtn("phoneNum5Btn");
+    }
+
+    function fnPhoneNum6Btn(env) {
+      fnBtn("phoneNum6Btn");
+    }
+    function fnPhoneNum7Btn(env) {
+      fnBtn("phoneNum7Btn");
+    }
+
+    function fnPhoneNum8Btn(env) {
+      fnBtn("phoneNum8Btn");
+    }
+    function fnPhoneNum9Btn(env) {
+      fnBtn("phoneNum9Btn");
+    }
+    function fnSubmitBtn(env) {
+      fnBtn("submitBtn");
+    }
+
+    function fnNoTnkBtn(env) {
+      //fnBtn("submitBtn");
+    }
+
+    function fnKeepShoppingBtn(env) {
+      // fnBtn("submitBtn");
+    }
+
+    function fnTextMeBtn(env) {
+      //fnBtn("submitBtn");
+    }
+
+    function fnPrevBtn(env) {
+      if (vid.paused == false) vid1.pause();
+      if (vid1.paused == true) {
+        if (stateNum == 0) {
+          step = 10;
+          stateNum = 2;
+          fnBtn("thirdPackPrev");
+        } else if (stateNum == 1) {
+          step = 10;
+          stateNum--;
+          fnBtn("topPickPrev");
+        } else if (stateNum == 2) {
+          step = 10;
+          stateNum--;
+          fnBtn("secondPackPrev");
+        }
+      }
+    }
+
+    function fnNextBtn(env) {
+      if (vid.paused == false) vid1.pause();
+      if (vid1.paused == true) {
+        if (stateNum == 0) {
+          step = 10;
+          stateNum++;
+          fnBtn("secondPickNext");
+        } else if (stateNum == 1) {
+          step = 10;
+          stateNum++;
+          fnBtn("thirdPickNext");
+        } else if (stateNum == 2) {
+          step = 10;
+          stateNum = 0;
+          fnBtn("topPickNext");
+        }
+      }
+    }
+
+    function fnRecomdBtn(env) {
+      if (step == 12) {
+        oBtn[43].isShow == true;
+        fnBtn("secondPickNext");
+      } else if (step == 14) {
+        oBtn[43].isShow == true;
+        fnBtn("thirdPickNext");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 672.12 374.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #2c89dd;
+      }
+
+      .cls-3 {
+        fill: #da3092;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+        mix-blend-mode: screen;
+        opacity: .55;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="99.67" y1="171.77" x2="592.8" y2="171.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2c89dd"/>
+      <stop offset="1" stop-color="#231f20"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <polygon class="cls-4" points="541.27 262.8 149.64 262.8 99.67 171.49 149.64 80.75 541.27 80.75 592.8 171.77 541.27 262.8"/>
+        <g>
+          <g>
+            <polygon class="cls-3" points="541.77 264.71 498.09 264.71 498.09 260.89 539.57 260.89 591.18 171.5 539.57 82.1 498.09 82.1 498.09 78.28 541.77 78.28 595.59 171.5 541.77 264.71"/>
+            <polygon class="cls-2" points="575.47 211.43 567.76 206.97 588.24 171.49 567.76 136.01 575.47 131.56 598.53 171.49 575.47 211.43"/>
+          </g>
+          <polygon class="cls-2" points="498.82 92.99 479.62 92.99 474.24 87.61 430.82 87.61 430.82 86.34 474.77 86.34 480.15 91.72 498.29 91.72 510.26 79.74 511.16 80.64 498.82 92.99"/>
+        </g>
+        <g>
+          <g>
+            <polygon class="cls-3" points="192.22 264.71 148.53 264.71 94.72 171.5 148.53 78.28 192.22 78.28 192.22 82.1 150.74 82.1 99.13 171.5 150.74 260.89 192.22 260.89 192.22 264.71"/>
+            <polygon class="cls-2" points="114.83 211.43 91.78 171.49 114.83 131.56 122.55 136.01 102.07 171.49 122.55 206.97 114.83 211.43"/>
+          </g>
+          <polygon class="cls-2" points="220.45 92.99 191.49 92.99 179.14 80.64 180.04 79.74 192.02 91.72 219.92 91.72 225.3 86.34 267.22 86.34 267.22 87.61 225.83 87.61 220.45 92.99"/>
+        </g>
+        <rect class="cls-2" x="267.22" y="262.16" width="163.6" height="1.27"/>
+      </g>
+    </g>
+  </g>
+</svg>
